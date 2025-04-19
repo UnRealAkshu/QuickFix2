@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-Fix 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Quick Fix</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#" id="contactUsLink">Contact Us</a></li>
+                <li><a href="address.html" id="addressLink">Address</a></li> <!-- 🔥 Added this line -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find the Best Services Near You</h1>
+        <p>Plumbing, Cleaning, Beauty, Health, and More</p>
+        <div class="search-container">
+            <input type="text" placeholder="Search services..." id="searchInput">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Popular Categories</h2>
+        <div class="category-list">
+            <div class="category-card">
+                <img src="plumber.jpg" alt="Plumbing">
+                <h3>Plumbing</h3>
+            </div>
+            <div class="category-card">
+                <img src="cleaning.jpg" alt="Cleaning">
+                <h3>Cleaning</h3>
+            </div>
+            <div class="category-card">
+                <img src="beauty.jpg" alt="Beauty">
+                <h3>Beauty</h3>
+            </div>
+            <div class="category-card">
+                <img src="fitness.jpg" alt="Fitness">
+                <h3>Fitness</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hidden initially, will be displayed after clicking "Contact Us" -->
+    <section id="contactUsSection" class="contact-us hidden">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+            
+            <label for="interactionType">Type of Interaction:</label>
+            <select id="interactionType" required>
+                <option value="general">General Inquiry</option>
+                <option value="support">Customer Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ServiceGo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
