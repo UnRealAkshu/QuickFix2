@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Save to localStorage (just for this project)
         localStorage.setItem('userAddress', JSON.stringify(addressData));
 
-        alert('Address saved successfully, baby! 😘');
+        alert('Address saved successfully');
         
         // Redirect back to homepage
         window.location.href = "index.html"; // assuming your homepage is index.html
